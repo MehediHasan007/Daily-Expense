@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/background"
+    tools:context=".DashboardFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        //Spinner
+        <LinearLayout
+            android:id="@+id/spinnerView"
+            android:padding="5dp"
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinnerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        //-------------------------------Date Start--------------------------------
+
+        <LinearLayout
+            android:id="@+id/datePickerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerView"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/fromDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:textColor="@color/Black"
+                android:text="From date"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/toDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="5dp"
+                android:text="To date"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        //------------------------------End Date---------------------------
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:id="@+id/totalExpenseId"
+            android:layout_below="@+id/datePickerId"
+            android:layout_above="@+id/navigation"
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/totalExpenseTVId"
+                    android:text="Total Expense"
+                    android:background="#E5FFE5"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_below="@+id/totalExpenseTVId"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="BDT"
+                        android:textSize="30dp"
+                        android:textColor="@color/Black"
+                        android:background="#E5FFE5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/totalBDT"
+                        android:layout_marginLeft="10dp"
+                        android:hint="0,000"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_taka"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    </FrameLayout>

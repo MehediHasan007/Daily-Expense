@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DailyExpense</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_expenses">Expenses</string>
+    <string name="show_document">Show document</string>
+    <string name="alert_title">Alert title</string>
+    <string name="message_title">Do you want to delete ?</string>
+
+    <string-array name="expenseTypeList">
+        <item>Enter expense type</item>
+        <item>Breakfast Bill</item>
+        <item>Lunch Bill</item>
+        <item>Dinner Bill</item>
+        <item>Mobile Phone Bill</item>
+        <item>Electricity Bill</item>
+        <item>Transport Bill</item>
+        <item>Shopping Bill</item>
+        <item>Rent Bill</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
